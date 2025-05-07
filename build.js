@@ -4,7 +4,7 @@ const path = require("path");
 
 const copyPublicFiles = () => {
   const srcDir = "./public";
-  const destDir = "./dist";
+  const destDir = "./docs";
   fs.mkdirSync(destDir, { recursive: true });
 
   for (const file of fs.readdirSync(srcDir)) {
@@ -15,7 +15,7 @@ const copyPublicFiles = () => {
 esbuild
   .build({
     entryPoints: ["./src/app.js", "./src/sw.js"],
-    outdir: "dist",
+    outdir: "docs",
     minify: true,
     bundle: false,
     format: "esm",
