@@ -1,0 +1,17 @@
+{
+  "name": "lightweight-single-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "preview": "npx serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.3",
+    "serve": "^14.2.4"
+  }
+}
